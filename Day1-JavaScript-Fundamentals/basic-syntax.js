@@ -35,3 +35,6 @@ functionScope();
 console.log("a..", a);
 // console.log("b..", b); // error: b is not defined
 // console.log("c..", c); // error: c is not defined
+
+/* ---------- */
+/* Comparison of let, var and const */
