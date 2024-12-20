@@ -37,4 +37,20 @@ console.log("a..", a);
 // console.log("c..", c); // error: c is not defined
 
 /* ---------- */
+
 /* Comparison of let, var and const */
+
+/* Declaration and Scope */
+/* var: Function-scoped */
+/* let and const: Block-scoped */
+
+function testScope() {
+  if (true) {
+    var variableOne = "I am var";
+    let variableTwo = "I am let";
+    const variableThree = "I am const";
+  }
+  console.log(variableOne);
+  // console.log(variableTwo); // Error: variableTwo is not defined
+  // console.log(variableThree); // Error: variableThree is not defined
+}
