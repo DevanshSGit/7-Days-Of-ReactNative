@@ -13,3 +13,25 @@ function printGlobal() {
 
 printGlobal();
 console.log(globalVar); // accessible here
+
+/* Function Scope */
+/* Variables declared inside a function are only accessible within that function */
+
+function functionScope() {
+  let functionVariable = "I exist only in this function";
+  console.log(functionVariable);
+}
+
+functionScope();
+
+/* Block Scope */
+/* Variables declared with let or const inside a block ({...}) are only accessible within that block */
+
+{
+  var a = "Variable A";
+  let b = "Variable B";
+  const c = "Variable C";
+}
+console.log("a..", a);
+// console.log("b..", b); // error: b is not defined
+// console.log("c..", c); // error: c is not defined
