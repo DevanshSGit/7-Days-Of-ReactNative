@@ -68,3 +68,18 @@ let y = 10;
 
 const z = 10;
 // const z = 20; // Error: Identifier 'z' has already been declared
+
+/* Re-assignment */
+/* var and let: can be re-assigned */
+/* const: cannot be re-assigned */
+var m = 10;
+x = 20; // allowed
+console.log(x); // Output: 20
+
+let n = 10;
+n = 20; // allowed
+console.log(n); // Output: 20
+
+const p = 10;
+// p = 20; // Error: Assignment to constant variable
+console.log(p); // Output: 10
