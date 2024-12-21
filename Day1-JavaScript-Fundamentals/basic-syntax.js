@@ -54,3 +54,17 @@ function testScope() {
   // console.log(variableTwo); // Error: variableTwo is not defined
   // console.log(variableThree); // Error: variableThree is not defined
 }
+
+/* Re-declaration */
+/* var: Can be re-declared in the same scope */
+/* let and const: Cannot be re-declared in the same scope */
+
+var x = 10;
+var x = 20; // Allowed
+console.log(x);
+
+let y = 10;
+// let y = 20; // Error: Identifier 'y' has already been declared
+
+const z = 10;
+// const z = 20; // Error: Identifier 'z' has already been declared
