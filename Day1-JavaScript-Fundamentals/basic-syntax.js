@@ -132,3 +132,19 @@ for (const x of [1, 2, 3]) {
   console.log(x);
 }
 // Output: 1, 2, 3 (const works for non-reassigned loop variables)
+
+/* Constant References in const */
+/* const: The variable binding cannot be changed, but the contents of objects and arrays
+declared with const can be modified */
+
+const arr = [1, 2, 3];
+arr.push(4); // Allowed
+console.log(arr); // Output: [1, 2, 3, 4]
+
+// arr = [5, 6]; // Error: Assignment to constant variable
+
+const obj = { name: "John" };
+obj.age = 25; // Allowed
+console.log(obj); // Output: { name: "John", age: 25 }
+
+// obj = { name: "Mark" }; // Error: Assignment to constant variable
