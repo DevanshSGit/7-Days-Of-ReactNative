@@ -5,14 +5,14 @@ parts of code. It defines where variables can be declared, accessed and modified
 /* Global Scope */
 /* Variables declared outside any function or block have global scope and can be accessed from anywhere in the code. */
 
-let globalVar = "I am a global variable";
+let globalVariable = "I am a global variable";
 
 function printGlobal() {
-  console.log(globalVar); // accessible here
+  console.log(globalVariable); // accessible here
 }
 
 printGlobal();
-console.log(globalVar); // accessible here
+console.log(globalVariable); // accessible here
 
 /* Function Scope */
 /* Variables declared inside a function are only accessible within that function */
@@ -95,3 +95,15 @@ console.log(varVar); // Output: undefined
 var varVar = "I am var";
 let letVar = "I am let";
 const constVar = "I am const";
+
+/* Global Object Property */
+/* var: Declared variables become properties of the global object (window in browsers) */
+/* let and const: Do not become properties of the global object */
+
+var globalVar = "I am var";
+let globalLet = "I am let";
+const globalConst = "I am const";
+
+console.log(window.globalVar); // Output: I am var
+console.log(window.globalLet); // Output: undefined
+console.log(window.globalConst); // Output: undefined
