@@ -83,3 +83,7 @@ console.log(n); // Output: 20
 const p = 10;
 // p = 20; // Error: Assignment to constant variable
 console.log(p); // Output: 10
+
+/* Hoisting */
+/* var: Hoisted to the top of its scope and initialized as undefined */
+/* let and const: Hoisted but remain in the 'Temporal Dead Zone' until their declaration is encountered */
