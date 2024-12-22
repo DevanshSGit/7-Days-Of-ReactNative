@@ -87,3 +87,11 @@ console.log(p); // Output: 10
 /* Hoisting */
 /* var: Hoisted to the top of its scope and initialized as undefined */
 /* let and const: Hoisted but remain in the 'Temporal Dead Zone' until their declaration is encountered */
+
+console.log(varVar); // Output: undefined
+// console.log(letVar); // Error: Cannot access 'letVar' before initialization
+// console.log(constVar); // Error: Cannot access 'constVar' before initialization
+
+var varVar = "I am var";
+let letVar = "I am let";
+const constVar = "I am const";
