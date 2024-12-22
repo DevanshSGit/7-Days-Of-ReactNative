@@ -107,3 +107,28 @@ const globalConst = "I am const";
 console.log(window.globalVar); // Output: I am var
 console.log(window.globalLet); // Output: undefined
 console.log(window.globalConst); // Output: undefined
+
+/* Usage in Loops */
+/* var: The value is shared across iterations */
+/* let: Each iteration gets a new scope */
+/* const: Useful in loops if the value does not need re-assignment */
+
+// Using var
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1000);
+}
+// Output after 1 second: 3, 3, 3 (var shares the same variable)
+
+// Using let
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 1000);
+}
+// Output after 1 second: 0, 1, 2 (let creates a new variable for each iteration)
+
+// Using const
+for (const x of [1, 2, 3]) {
+  console.log(x);
+}
+// Output: 1, 2, 3 (const works for non-reassigned loop variables)
