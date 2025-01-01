@@ -32,6 +32,7 @@ functionScope();
   let b = "Variable B";
   const c = "Variable C";
 }
+
 console.log("a..", a);
 // console.log("b..", b); // error: b is not defined
 // console.log("c..", c); // error: c is not defined
@@ -148,3 +149,5 @@ obj.age = 25; // Allowed
 console.log(obj); // Output: { name: "John", age: 25 }
 
 // obj = { name: "Mark" }; // Error: Assignment to constant variable
+
+// Hoisting and TDZ
