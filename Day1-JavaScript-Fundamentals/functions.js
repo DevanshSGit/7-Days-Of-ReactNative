@@ -40,3 +40,15 @@ console.log(divide(10, 2));
 (() => {
   console.log("Arrow IIFE!");
 })();
+
+// Object Methods
+
+const calc = {
+  add(a, b) {
+    return a + b;
+  },
+  subtract: (a, b) => a - b,
+};
+
+console.log(calc.add(2, 4));
+console.log(calc.subtract(4, 2));
