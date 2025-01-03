@@ -52,3 +52,17 @@ const calc = {
 
 console.log(calc.add(2, 4));
 console.log(calc.subtract(4, 2));
+
+// Class Methods
+
+class Sport {
+  constructor(name) {
+    this.name = name;
+  }
+  sport() {
+    console.log(`${this.name} is an intense sport.`);
+  }
+}
+
+const football = new Sport("Football");
+football.sport();
