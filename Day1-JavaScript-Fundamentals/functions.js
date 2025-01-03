@@ -16,6 +16,7 @@ console.log(multiply(2, 3));
 
 // Arrow Functions
 // Not hoisted
+// No binding for this
 
 const subtract = (a, b) => a - b;
 
@@ -27,4 +28,15 @@ const divide = (a, b) => {
   return a / b;
 };
 
-console.log(divide(10 / 2));
+console.log(divide(10, 2));
+
+// Immediately Invoked Function Expressions (IIFE)
+// Executed immediately after being defined
+
+(function () {
+  console.log("This is an IIFE!");
+})();
+
+(() => {
+  console.log("Arrow IIFE!");
+})();
