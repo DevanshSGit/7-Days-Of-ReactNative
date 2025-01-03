@@ -81,3 +81,13 @@ function makeCounter() {
 const counter = makeCounter();
 console.log(counter());
 console.log(counter());
+
+/* ** ** ** ** ** ** */
+/* The 'this' keyword */
+
+// Global Context
+
+// In global context, 'this' refers to the global object
+// In browsers, window and in Node.js, global
+
+console.log("this", this);
