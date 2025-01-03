@@ -66,3 +66,18 @@ class Sport {
 
 const football = new Sport("Football");
 football.sport();
+
+// Closures
+// Remembers the scope they were created in, even after exiting it
+
+function makeCounter() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
+}
+
+const counter = makeCounter();
+console.log(counter());
+console.log(counter());
