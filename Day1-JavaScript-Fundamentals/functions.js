@@ -99,3 +99,14 @@ function regularFunction() {
 }
 
 regularFunction();
+
+// Object Context
+
+const obj = {
+  name: "Object",
+  showName: function () {
+    console.log(this.name); // Object
+  },
+};
+
+obj.showName();
