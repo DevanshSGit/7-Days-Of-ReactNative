@@ -90,4 +90,12 @@ console.log(counter());
 // In global context, 'this' refers to the global object
 // In browsers, window and in Node.js, global
 
-console.log("this", this);
+console.log("this", this); // {}
+
+// Function Context
+
+function regularFunction() {
+  console.log(this); // global
+}
+
+regularFunction();
