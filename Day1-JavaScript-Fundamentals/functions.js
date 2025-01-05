@@ -110,3 +110,32 @@ const obj = {
 };
 
 obj.showName();
+
+// Assigning the method to a variable and calling it will lose the object context
+
+const objMethod = obj.showName;
+objMethod(); // undefined (or global object)
+
+// Arrow Functions
+// Arrow functions don't have their own this. Instead, they inherit this from their enclosing lexical scope.
+
+const objTwo = {
+  name: "Object",
+  arrowFunction: () => {
+    console.log(this.name);
+  },
+};
+objTwo.arrowFunction();
+
+// When used within a method, an arrow function inherits 'this' from the enclosing function
+
+const objThree = {
+  name: "Object",
+  method: function () {
+    const arrowFun = () => {
+      console.log(this.name); // "Object"
+    };
+    arrowFun();
+  },
+};
+objThree.method();
