@@ -156,3 +156,14 @@ class MyClass {
 
 const instance = new MyClass("Class Instance");
 instance.showName(); // "Class Instance"
+
+// Constructor Functions
+
+// When using a constructor function, this refers to the newly created object
+
+function Person(name) {
+  this.name = name;
+}
+
+const person1 = new Person("Josh");
+console.log(person1.name); // "Josh"
