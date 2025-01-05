@@ -139,3 +139,20 @@ const objThree = {
   },
 };
 objThree.method();
+
+// Class Context
+
+// Within a class, this refers to the specific instance of the class
+
+class MyClass {
+  constructor(name) {
+    this.name = name;
+  }
+
+  showName() {
+    console.log(this.name);
+  }
+}
+
+const instance = new MyClass("Class Instance");
+instance.showName(); // "Class Instance"
