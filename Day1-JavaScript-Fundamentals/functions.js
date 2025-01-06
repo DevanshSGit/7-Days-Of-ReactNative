@@ -182,3 +182,26 @@ console.log(person1.name); // "Josh"
 // button.addEventListener("click", () => {
 //   console.log(this); // Outer scope's this
 // });
+
+// In setTimeout and setInterval
+
+function Timer() {
+  this.seconds = 0;
+  setInterval(() => {
+    this.seconds++;
+    console.log("this.seconds", this.seconds);
+  }, 1000);
+}
+
+const timer = new Timer();
+
+// Implicit binding of 'this' can be lost when passing a method as a callback
+
+const obj4 = {
+  name: "Object",
+  showName: function () {
+    console.log(this.name);
+  },
+};
+
+setTimeout(obj4.showName, 1000); // undefined
