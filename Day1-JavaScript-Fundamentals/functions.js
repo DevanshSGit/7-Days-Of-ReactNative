@@ -167,3 +167,18 @@ function Person(name) {
 
 const person1 = new Person("Josh");
 console.log(person1.name); // "Josh"
+
+// Event Handlers
+
+// this refers to the element that received the event
+
+// const button = document.querySelector("button");
+// button.addEventListener("click", function () {
+//   console.log(this); // button element
+// });
+
+// Using arrow functions in event handlers binds 'this' lexically
+
+// button.addEventListener("click", () => {
+//   console.log(this); // Outer scope's this
+// });
