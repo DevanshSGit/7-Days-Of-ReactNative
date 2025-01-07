@@ -42,3 +42,13 @@ console.log(person.name); // Alice
 
 const key = "age";
 console.log(person[key]);
+
+// Modifying Objects
+
+// Adding/Updating Properties
+
+person.hobby = "Reading";
+person.age = 26;
+
+console.log(person.hobby);
+console.log(person.age);
