@@ -36,3 +36,9 @@ console.log(dog.name);
 
 // Dot Notation
 console.log(person.name); // Alice
+
+// Bracket Notation
+// Useful when the key is dynamic or not a valid JavaScript identifier
+
+const key = "age";
+console.log(person[key]);
