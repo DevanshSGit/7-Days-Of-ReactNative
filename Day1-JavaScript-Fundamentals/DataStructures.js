@@ -52,3 +52,41 @@ person.age = 26;
 
 console.log(person.hobby);
 console.log(person.age);
+
+// Deleting properties
+delete person.isStudent;
+console.log(person.isStudent); // Undefined
+
+// Checking properties
+
+// Using in Operator
+console.log("name" in person); // true
+console.log("salary" in person); // false
+
+// Enumerating Properties
+
+// for...in loop
+for (let key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+// Object.keys()
+// Returns an array of keys
+
+console.log(Object.keys(person)); // [ 'name', 'age', 'greet', 'hobby' ]
+
+// Object.values()
+// Returns an array of values
+
+console.log(Object.values(person)); // [ 'Alice', 26, [Function: greet], 'Reading' ]
+
+// Object.entries()
+// Returns an array of [key, value] pairs
+
+console.log(Object.entries(person));
+// [
+//     [ 'name', 'Alice' ],
+//     [ 'age', 26 ],
+//     [ 'greet', [Function: greet] ],
+//     [ 'hobby', 'Reading' ]
+//   ]
