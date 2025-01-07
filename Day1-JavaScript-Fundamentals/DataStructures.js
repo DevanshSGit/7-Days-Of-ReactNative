@@ -1,5 +1,6 @@
 // Objects
 
+// Object Literals
 const person = {
   name: "Alice",
   age: 25,
@@ -10,3 +11,11 @@ const person = {
 };
 
 person.greet();
+
+// Using the Object constructor
+const car = new Object();
+car.make = "Toyota";
+car.model = "Camry";
+car.year = 2021;
+
+console.log(car);
