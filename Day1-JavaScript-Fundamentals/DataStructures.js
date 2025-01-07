@@ -31,3 +31,8 @@ dog.name = "Buddy";
 
 console.log(dog.type);
 console.log(dog.name);
+
+// Accessing Properties
+
+// Dot Notation
+console.log(person.name); // Alice
