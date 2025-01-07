@@ -19,3 +19,15 @@ car.model = "Camry";
 car.year = 2021;
 
 console.log(car);
+
+// Using Object.create()
+// Creates an object with a specified prototype
+const animal = {
+  type: "Mammal",
+};
+
+const dog = Object.create(animal);
+dog.name = "Buddy";
+
+console.log(dog.type);
+console.log(dog.name);
