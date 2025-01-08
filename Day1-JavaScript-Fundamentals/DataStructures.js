@@ -96,3 +96,9 @@ console.log(Object.entries(person));
 const personObj = { name: "Alice", age: 25 };
 const jsonString = JSON.stringify(personObj);
 console.log(jsonString);
+
+// Parsing JSON to Objects
+
+const json = '{"name": "Alice", "age": 25}';
+const parsedObj = JSON.parse(json);
+console.log(parsedObj);
