@@ -89,4 +89,10 @@ console.log(Object.entries(person));
 //     [ 'age', 26 ],
 //     [ 'greet', [Function: greet] ],
 //     [ 'hobby', 'Reading' ]
-//   ]
+//  ]
+
+// Converting Objects to JSON
+
+const personObj = { name: "Alice", age: 25 };
+const jsonString = JSON.stringify(personObj);
+console.log(jsonString);
