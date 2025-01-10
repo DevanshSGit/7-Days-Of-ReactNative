@@ -103,6 +103,8 @@ const json = '{"name": "Alice", "age": 25}';
 const parsedObj = JSON.parse(json);
 console.log(parsedObj);
 
+/* * * * * * * * */
+
 // Declaring an array
 
 // Using array literal
@@ -142,3 +144,20 @@ console.log(arr.length);
 
 arr.pop(); // [0, 1, 2, 3, 4]
 arr.shift(); // [1, 2, 3, 4]
+
+// Iterating over arrays
+
+// for loop
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits);
+}
+
+// for...of loop
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+
+// forEach(): Executes a function for each array element
+fruits.forEach((fruit, index) => {
+  console.log(`${index}: ${fruit}`);
+});
