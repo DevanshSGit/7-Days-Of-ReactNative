@@ -116,3 +116,10 @@ let emptyArray = [];
 
 // Mixed data types
 let mixedArray = [42, "hello", true, null];
+
+// Properties and methods
+
+// Length
+
+let nums = [10, 20, 30];
+console.log(nums.length);
