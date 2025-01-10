@@ -102,3 +102,17 @@ console.log(jsonString);
 const json = '{"name": "Alice", "age": 25}';
 const parsedObj = JSON.parse(json);
 console.log(parsedObj);
+
+// Declaring an array
+
+// Using array literal
+let fruits = ["apple", "banana", "cherry"];
+
+// Using the array constructor
+let numbers = new Array(10, 20, 30);
+
+// Empty array
+let emptyArray = [];
+
+// Mixed data types
+let mixedArray = [42, "hello", true, null];
