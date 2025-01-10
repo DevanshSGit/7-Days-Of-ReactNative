@@ -134,3 +134,11 @@ arr.push(5); // [1, 2, 3, 4, 5]
 arr.unshift(0); // [0, 1, 2, 3, 4, 5]
 
 console.log(arr.length);
+
+// Removing elements
+
+// pop(): Removes the last element
+// shift(): Removes the first element
+
+arr.pop(); // [0, 1, 2, 3, 4]
+arr.shift(); // [1, 2, 3, 4]
