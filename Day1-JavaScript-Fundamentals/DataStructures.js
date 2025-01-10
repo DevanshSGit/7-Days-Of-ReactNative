@@ -123,3 +123,14 @@ let mixedArray = [42, "hello", true, null];
 
 let nums = [10, 20, 30];
 console.log(nums.length);
+
+// Adding Elements
+
+// push(): Adds an element at the end of the array
+// unshift(): Adds an element to the beginning of the array
+
+let arr = [1, 2, 3, 4];
+arr.push(5); // [1, 2, 3, 4, 5]
+arr.unshift(0); // [0, 1, 2, 3, 4, 5]
+
+console.log(arr.length);
