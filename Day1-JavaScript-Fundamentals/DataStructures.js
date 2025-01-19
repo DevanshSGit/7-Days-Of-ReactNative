@@ -167,3 +167,6 @@ fruits.forEach((fruit, index) => {
 // map(): Creates a new array by applying a function to each element
 let numberArray = [1, 2, 3];
 let squaredNumbers = numberArray.map((num) => num * num); // [1, 4, 9]
+
+// filter(): Creates a new array with elements that pass a condition.
+let evenNumbers = numberArray.filter((num) => num % 2 === 0); // [2]
