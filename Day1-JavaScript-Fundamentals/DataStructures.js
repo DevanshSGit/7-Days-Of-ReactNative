@@ -176,3 +176,6 @@ let evenNumbers = numberArray.filter((num) => num % 2 === 0); // [2]
 // indexOf(): Finds the index of the first occurrence of a value
 let animals = ["dog", "cat", "bird"];
 console.log(animals.indexOf("cat")); // 1
+
+// includes(): Checks if an array contains a value
+console.log(animals.includes("cat")); // true
