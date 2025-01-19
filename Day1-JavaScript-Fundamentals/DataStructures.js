@@ -170,3 +170,9 @@ let squaredNumbers = numberArray.map((num) => num * num); // [1, 4, 9]
 
 // filter(): Creates a new array with elements that pass a condition.
 let evenNumbers = numberArray.filter((num) => num % 2 === 0); // [2]
+
+// Finding elements
+
+// indexOf(): Finds the index of the first occurrence of a value
+let animals = ["dog", "cat", "bird"];
+console.log(animals.indexOf("cat")); // 1
