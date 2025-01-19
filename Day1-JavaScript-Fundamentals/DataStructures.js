@@ -185,3 +185,10 @@ let found = numberArray.find((num) => num > 2); // 3
 
 // findIndex(): Returns the index of the first matching element
 let index = numberArray.findIndex((num) => num > 2); // 2
+
+// Sorting and Reversing
+
+// sort(): Sorts elements (alphabetically by default).
+
+let letters = ["b", "a", "c"];
+letters.sort(); // ['a', 'b', 'c']
