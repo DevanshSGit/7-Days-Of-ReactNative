@@ -161,3 +161,9 @@ for (let fruit of fruits) {
 fruits.forEach((fruit, index) => {
   console.log(`${index}: ${fruit}`);
 });
+
+// Transforming arrays
+
+// map(): Creates a new array by applying a function to each element
+let numberArray = [1, 2, 3];
+let squaredNumbers = numberArray.map((num) => num * num); // [1, 4, 9]
