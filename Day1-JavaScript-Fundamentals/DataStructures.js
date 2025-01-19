@@ -179,3 +179,6 @@ console.log(animals.indexOf("cat")); // 1
 
 // includes(): Checks if an array contains a value
 console.log(animals.includes("cat")); // true
+
+// find(): Returns the first element that matches a condition
+let found = numberArray.find((num) => num > 2); // 3
