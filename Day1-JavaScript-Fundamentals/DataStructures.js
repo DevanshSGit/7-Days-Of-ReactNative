@@ -195,3 +195,22 @@ letters.sort(); // ['a', 'b', 'c']
 
 // reverse(): Reverses the array order.
 letters.reverse(); // ['c', 'b', 'a']
+
+let users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
+
+// Find an user by id
+let user = users.find((user) => user.id === 2);
+console.log(user); // { id: 2, name: 'Bob }
+
+// Add a new user
+users.push({ id: 4, name: "Diana" });
+console.log(users);
+
+// Remove a user
+let userIndex = users.findIndex((user) => user.id === 1);
+if (userIndex !== -1) users.splice(userIndex, 1);
+console.log(users);
