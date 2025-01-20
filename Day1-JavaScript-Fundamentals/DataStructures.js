@@ -192,3 +192,6 @@ let index = numberArray.findIndex((num) => num > 2); // 2
 
 let letters = ["b", "a", "c"];
 letters.sort(); // ['a', 'b', 'c']
+
+// reverse(): Reverses the array order.
+letters.reverse(); // ['c', 'b', 'a']
