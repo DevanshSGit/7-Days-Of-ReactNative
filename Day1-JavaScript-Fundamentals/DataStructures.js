@@ -196,9 +196,19 @@ letters.sort(); // ['a', 'b', 'c']
 // sort() with comparator function
 let numbersToSort = [10, 2, 33, 4, 15];
 
+arr.sort((a, b) => {
+  // Return a negative value if 'a' should come before 'b'
+  // Return a positive value if 'a' should come after 'b'
+  // Return 0 if 'a' and 'b' are equal
+});
+
 // Ascending order (smallest to largest)
 numbersToSort.sort((a, b) => a - b);
 console.log(numbersToSort);
+
+// Descending order (largest to smallest)
+numbersToSort.sort((a, b) => b - a);
+console.log(numbersToSort); // [33, 15, 10, 4, 2]
 
 // reverse(): Reverses the array order.
 letters.reverse(); // ['c', 'b', 'a']
