@@ -108,7 +108,7 @@ console.log(parsedObj);
 // Declaring an array
 
 // Using array literal
-let fruits = ["apple", "banana", "cherry"];
+let fruits = ["apple", "banana", "cherry", "date"];
 
 // Using the array constructor
 let numbers = new Array(10, 20, 30);
@@ -209,6 +209,15 @@ console.log(numbersToSort);
 // Descending order (largest to smallest)
 numbersToSort.sort((a, b) => b - a);
 console.log(numbersToSort); // [33, 15, 10, 4, 2]
+
+// Sorting strings alpahbetically
+// For strings, sort() works without a comparator function because it sorts alphabetically by default
+fruits.sort();
+console.log("fruits", fruits); // ['apple', 'banana', 'cherry', 'date']
+
+// Reverse alphabetical order
+fruits.sort((a, b) => b.localeCompare(a));
+console.log("fruits", fruits); // ['date', 'cherry', 'banana', 'apple']
 
 // reverse(): Reverses the array order.
 letters.reverse(); // ['c', 'b', 'a']
