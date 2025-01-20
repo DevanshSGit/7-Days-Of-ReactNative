@@ -193,6 +193,13 @@ let index = numberArray.findIndex((num) => num > 2); // 2
 let letters = ["b", "a", "c"];
 letters.sort(); // ['a', 'b', 'c']
 
+// sort() with comparator function
+let numbersToSort = [10, 2, 33, 4, 15];
+
+// Ascending order (smallest to largest)
+numbersToSort.sort((a, b) => a - b);
+console.log(numbersToSort);
+
 // reverse(): Reverses the array order.
 letters.reverse(); // ['c', 'b', 'a']
 
