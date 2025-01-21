@@ -244,6 +244,24 @@ numArr.sort((a, b) => {
   return a - b; // If both are even or both are odd, sort in ascending order
 });
 
+// Sorting by multiple conditions
+// Sorting by age, then by name
+
+let people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 25 },
+  { name: "Diana", age: 20 },
+];
+
+// Sort by age (ascending), and if ages are equal, sort by name (alphabetically)
+people.sort((a, b) => {
+  if (a.age !== b.age) return a.age - b.age;
+  return a.name.localeCompare(b.name);
+});
+
+console.log(people);
+
 // Reverse alphabetical order
 fruits.sort((a, b) => b.localeCompare(a));
 console.log("fruits", fruits); // ['date', 'cherry', 'banana', 'apple']
