@@ -215,6 +215,26 @@ console.log(numbersToSort); // [33, 15, 10, 4, 2]
 fruits.sort();
 console.log("fruits", fruits); // ['apple', 'banana', 'cherry', 'date']
 
+// Sorting an array of objects by a property
+
+let products = [
+  { id: 1, name: "Laptop", price: 1200 },
+  { id: 2, name: "Phone", price: 800 },
+  { id: 3, name: "Tablet", price: 600 },
+];
+
+// Sorting by price (ascending)
+products.sort((a, b) => a.price - b.price);
+console.log(products);
+
+// Sorting by price (descending)
+products.sort((a, b) => b.price - a.price);
+console.log(products);
+
+// Sorting by a string property
+products.sort((a, b) => a.name.localeCompare(b.name));
+console.log(products);
+
 // Reverse alphabetical order
 fruits.sort((a, b) => b.localeCompare(a));
 console.log("fruits", fruits); // ['date', 'cherry', 'banana', 'apple']
