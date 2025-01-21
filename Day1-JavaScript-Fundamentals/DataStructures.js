@@ -266,6 +266,14 @@ console.log(people);
 fruits.sort((a, b) => b.localeCompare(a));
 console.log("fruits", fruits); // ['date', 'cherry', 'banana', 'apple']
 
+// In-place sorting
+// sort() method modifies the original array.
+// To preserve the original array, make a copy
+let original = [3, 1, 4, 2];
+let sorted = [...original].sort((a, b) => a - b);
+console.log(original); // [3, 1, 4, 2]
+console.log(sorted); // [1, 2, 3, 4]
+
 // reverse(): Reverses the array order.
 letters.reverse(); // ['c', 'b', 'a']
 
