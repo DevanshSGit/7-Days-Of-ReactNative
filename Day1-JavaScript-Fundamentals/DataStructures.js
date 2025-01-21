@@ -235,6 +235,15 @@ console.log(products);
 products.sort((a, b) => a.name.localeCompare(b.name));
 console.log(products);
 
+// Sorting with a custom condition
+// Sorting even numbers before odd numbers
+let numArr = [5, 3, 8, 1, 4, 7, 2];
+numArr.sort((a, b) => {
+  if (a % 2 === 0 && b % 2 !== 0) return -1; // a: even, b: odd
+  if (a % 2 !== 0 && b % 2 !== 0) return 1; // a: odd, b: even
+  return a - b; // If both are even or both are odd, sort in ascending order
+});
+
 // Reverse alphabetical order
 fruits.sort((a, b) => b.localeCompare(a));
 console.log("fruits", fruits); // ['date', 'cherry', 'banana', 'apple']
