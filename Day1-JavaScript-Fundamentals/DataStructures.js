@@ -116,6 +116,20 @@ let numbers = new Array(10, 20, 30);
 // Empty array
 let emptyArray = [];
 
+// Array.of(): Creates a new array from its arguments
+let arr2 = Array.of(10); // [10]
+
+// Array.from(): Creates an array from an iterable object like a string, set, map, or arguments object.
+// Also allows mapping
+
+// Converting a string into an array
+let strArr = Array.from("hello");
+console.log("strArr", strArr); // [ 'h', 'e', 'l', 'l', 'o' ]
+
+// Create an array with a mapping function
+let squares = Array.from([1, 2, 3], (x) => x ** 2);
+console.log("squares", squares); // [1, 4, 9]
+
 // Mixed data types
 let mixedArray = [42, "hello", true, null];
 
