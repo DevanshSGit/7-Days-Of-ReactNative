@@ -333,3 +333,18 @@ for (let [index, color] of colors.entries()) {
 // 0: red
 // 1: green
 // 2: blue
+
+// reduce() and reduceRight()
+
+// reduce(): Reduces an array to a single value from left-to-right
+// reduceRight(): Works like reduce(), but iterates from right-to-left
+
+let nums2 = [1, 2, 3, 4, 5];
+
+// Sum of all numbers
+let sum = nums2.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); // 15
+
+// Right-to-left reduction
+let diff = nums2.reduceRight((acc, curr) => acc - curr);
+console.log(diff); // -5
