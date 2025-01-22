@@ -348,3 +348,15 @@ console.log(sum); // 15
 // Right-to-left reduction
 let diff = nums2.reduceRight((acc, curr) => acc - curr);
 console.log(diff); // -5
+
+// some() and every()
+// some(): Checks if at least one element satisfies a condition
+// every(): Checks if all elements satisfy a condition
+
+let numbers2 = [1, 2, 3, 4, 5];
+
+// Check if any number is greater than 3
+console.log(numbers2.some((num) => num > 3)); // true
+
+// Check if all numbers are less than 10
+console.log(numbers2.every((num) => num < 10)); // true
