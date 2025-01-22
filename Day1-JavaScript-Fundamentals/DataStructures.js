@@ -309,3 +309,27 @@ console.log(users);
 let userIndex = users.findIndex((user) => user.id === 1);
 if (userIndex !== -1) users.splice(userIndex, 1);
 console.log(users);
+
+// Iteration Methods
+
+// keys(), values(), entries()
+
+let colors = ["red", "green", "blue"];
+
+// keys()
+for (let key of colors.keys()) {
+  console.log(key); // 0, 1, 2
+}
+
+// values()
+for (let value of colors.values()) {
+  console.log(value); // 'red', 'green', 'blue'
+}
+
+// entries()
+for (let [index, color] of colors.entries()) {
+  console.log(`${index}: ${color}`);
+}
+// 0: red
+// 1: green
+// 2: blue
