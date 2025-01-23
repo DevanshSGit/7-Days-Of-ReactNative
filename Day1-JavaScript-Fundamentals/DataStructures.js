@@ -410,3 +410,10 @@ example(1, 2, 3); // [1, 2, 3]
 let [first, second, ...rest] = [1, 2, 3, 4];
 console.log(first); // 1
 console.log(rest); // [3, 4]
+
+// Spread Operator (...)
+// Used to expand arrays into individual elements
+let numsOne = [1, 2];
+let numsTwo = [3, 4];
+let combined = [...numsOne, ...numsTwo];
+console.log(combined); // [1, 2, 3, 4]
