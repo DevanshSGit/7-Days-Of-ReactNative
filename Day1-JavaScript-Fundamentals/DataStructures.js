@@ -360,3 +360,14 @@ console.log(numbers2.some((num) => num > 3)); // true
 
 // Check if all numbers are less than 10
 console.log(numbers2.every((num) => num < 10)); // true
+
+// flat() and flatMap()
+// flat(): flattens nested arrays into a single-level array
+// flatMap(): maps each element and flattens the result
+
+let nested = [1, [2, 3], [4, [5]]];
+let nestedTwo = [1, [2, [3, [4, [5]]]]];
+
+// Flatten one level deep
+console.log(nested.flat()); // [1, 2, 3, 4, [5]]
+console.log(nestedTwo.flat()); // [ 1, 2, [ 3, [ 4, [Array] ] ] ]
