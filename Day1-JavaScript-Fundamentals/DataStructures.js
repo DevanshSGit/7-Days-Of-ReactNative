@@ -417,3 +417,11 @@ let numsOne = [1, 2];
 let numsTwo = [3, 4];
 let combined = [...numsOne, ...numsTwo];
 console.log(combined); // [1, 2, 3, 4]
+
+// Rest Operator
+// Collects remaining items into an array
+function computeSum(first, ...rest) {
+  console.log(rest);
+  return rest.reduce((a, b) => a + b, first);
+}
+console.log(computeSum(1, 2, 3, 4)); // 10
