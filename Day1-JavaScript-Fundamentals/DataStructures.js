@@ -371,3 +371,12 @@ let nestedTwo = [1, [2, [3, [4, [5]]]]];
 // Flatten one level deep
 console.log(nested.flat()); // [1, 2, 3, 4, [5]]
 console.log(nestedTwo.flat()); // [ 1, 2, [ 3, [ 4, [Array] ] ] ]
+
+// Flatten all levels
+console.log(nested.flat(Infinity)); // [1, 2, 3, 4, 5]
+
+let words = ["hello world", "foo bar"];
+
+// Map and flatten
+console.log(words.flatMap((word) => word.split(" ")));
+// ['hello', 'world', 'foo', 'bar']
