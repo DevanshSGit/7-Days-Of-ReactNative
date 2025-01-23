@@ -380,3 +380,13 @@ let words = ["hello world", "foo bar"];
 // Map and flatten
 console.log(words.flatMap((word) => word.split(" ")));
 // ['hello', 'world', 'foo', 'bar']
+
+// Methods for searching and indexing
+
+// lastIndexOf(): finds the last occurrence of an element in the array
+let numbersTwo = [1, 2, 3, 2, 1];
+console.log(numbersTwo.lastIndexOf(2)); // 3 (index of last '2')
+
+// at(): to access elements from the end using negative indexes
+let tens = [10, 20, 30];
+console.log(tens.at(-1)); // 30 (last element)
