@@ -390,3 +390,23 @@ console.log(numbersTwo.lastIndexOf(2)); // 3 (index of last '2')
 // at(): to access elements from the end using negative indexes
 let tens = [10, 20, 30];
 console.log(tens.at(-1)); // 30 (last element)
+console.log(tens.at(-2)); // 20
+
+// Using array-like objects
+// array-like objects don't have any array methods.
+// they can be converted to arrays using Array.from()
+
+function example() {
+  let args = Array.from(arguments); // Converts arguments to an array
+  console.log(args);
+}
+example(1, 2, 3); // [1, 2, 3]
+
+// Destructuring and Spread/Rest Operators
+
+// Destructuring Arrays
+// Extract values from arrays into variables
+
+let [first, second, ...rest] = [1, 2, 3, 4];
+console.log(first); // 1
+console.log(rest); // [3, 4]
