@@ -425,3 +425,13 @@ function computeSum(first, ...rest) {
   return rest.reduce((a, b) => a + b, first);
 }
 console.log(computeSum(1, 2, 3, 4)); // 10
+
+// Cloning Arrays
+
+let originalArr = [1, 2, 3];
+
+// Using slice()
+let clone1 = originalArr.slice();
+
+// Using spread operator
+let clone2 = [...originalArr];
