@@ -442,3 +442,15 @@ let clone2 = [...originalArr];
 let nums3 = [1, 2, 2, 3, 4, 4];
 let unique = [...new Set(nums3)];
 console.log(unique); // [1, 2, 3, 4]
+
+/******************/
+
+// Spread Operator
+
+// Using Spread with arrays
+
+// Expanding Arrays
+
+// expands an array into its individual elements
+let arrSpread = [1, 2, 3];
+console.log(...arrSpread); // 1 2 3
