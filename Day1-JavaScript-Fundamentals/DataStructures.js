@@ -454,3 +454,23 @@ console.log(unique); // [1, 2, 3, 4]
 // expands an array into its individual elements
 let arrSpread = [1, 2, 3];
 console.log(...arrSpread); // 1 2 3
+
+// Combining Arrays
+
+let arrOne = [1, 2, 3];
+let arrTwo = [4, 5, 6];
+let combinedArr = [...arrOne, ...arrTwo];
+console.log(combinedArr); // [1, 2, 3, 4, 5, 6]
+
+// Copying Arrays
+
+// creating a shallow copy of an array
+
+let copy = [...combinedArr];
+console.log(copy);
+
+// Using spread with immutable updates
+
+// it is useful when we want to create a new array after modifying an element (avoiding mutation).
+let newArr = [...arrOne.slice(0, 1), 42, ...arrOne.slice(2)];
+console.log(newArr); // [1, 42, 3]
