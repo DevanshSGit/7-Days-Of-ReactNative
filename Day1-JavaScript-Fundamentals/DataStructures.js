@@ -435,3 +435,10 @@ let clone1 = originalArr.slice();
 
 // Using spread operator
 let clone2 = [...originalArr];
+
+// Using arrays with Set
+// Conversion of arrays to sets for unique values
+
+let nums3 = [1, 2, 2, 3, 4, 4];
+let unique = [...new Set(nums3)];
+console.log(unique); // [1, 2, 3, 4]
